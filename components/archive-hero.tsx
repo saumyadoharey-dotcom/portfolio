@@ -19,6 +19,6 @@ export default function ArchiveHero(){
         <ProjectPopup project={project}><button className="archive-art" aria-label={`Read ${project.name} case study`}><span className="archive-edition">SELECTED WORK / {String(index+1).padStart(2,'0')}</span><ProjectArtwork project={project}/><span className="archive-art-bottom">{project.name}<span>READ THE STORY ↗</span></span></button></ProjectPopup>
       </motion.div></AnimatePresence>
     </div>
-    <div className="archive-bottom"><p className="archive-intent">An eye for the detail.<br/><em>A story in the making.</em></p><div className="archive-controls"><button onClick={()=>step(-1)} aria-label="Previous featured project">←</button><span aria-live="polite">{String(index+1).padStart(2,'0')} / {projects.length}</span><button onClick={()=>step(1)} aria-label="Next featured project">→</button></div><a href="#work">Explore the archive ↓</a></div>
+    <div className="archive-bottom"><p className="archive-intent">An eye for the detail.<br/><em>A story in the making.</em></p><div className="archive-controls"><button onClick={()=>step(-1)} aria-label="Previous featured project">←</button><span aria-live="polite">{String(index+1).padStart(2,'0')} / {projects.length}</span><button onClick={()=>step(1)} aria-label="Next featured project">→</button></div><a href="/work">Explore the archive ↓</a></div>
   </section>
 }
