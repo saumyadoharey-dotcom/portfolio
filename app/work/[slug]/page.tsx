@@ -19,10 +19,10 @@ export default async function ProjectPage({params}: Props) {
   const project=projects[index];const story=stories[slug];
   const next=projects[(index+1)%projects.length];const previous=projects[(index+projects.length-1)%projects.length];
   return <div className="project-page">
-    <header className="nav"><Link href="/" className="wordmark" aria-label="Saumya home">saumya<span>✳</span></Link><nav><Link href="/#work">All work <sup>{projects.length}</sup></Link><Link href="/#about">About</Link><Link href="/#tools">Tools</Link></nav><span className="nav-note">A STORY FROM THE ARCHIVE</span></header>
+    <header className="nav"><Link href="/" className="wordmark" aria-label="Saumya home">saumya<span>✳</span></Link><nav><Link href="/work">All work <sup>{projects.length}</sup></Link><Link href="/#about">About</Link><Link href="/#tools">Tools</Link></nav><span className="nav-note">A STORY FROM THE ARCHIVE</span></header>
     <main id="project-main">
       <section className="detail-hero">
-        <div className="detail-kicker"><Link href="/#work">← Selected work</Link><span>{String(index+1).padStart(2,'0')} / {String(projects.length).padStart(2,'0')}</span></div>
+        <div className="detail-kicker"><Link href="/work">← Selected work</Link><span>{String(index+1).padStart(2,'0')} / {String(projects.length).padStart(2,'0')}</span></div>
         <p className="eyebrow">{project.cat} / {project.type}</p>
         <h1>{project.name}</h1><p className="detail-line">{project.line}</p>
         <dl className="detail-facts"><div><dt>MY ROLE</dt><dd>{project.roles}</dd></div><div><dt>FORMAT</dt><dd>{project.format}</dd></div><div><dt>PROJECT FOCUS</dt><dd>{story.focus}</dd></div></dl>
@@ -38,6 +38,6 @@ export default async function ProjectPage({params}: Props) {
       </article></div>
       <nav className="detail-pagination" aria-label="Browse projects"><Link className="previous-detail" href={`/work/${previous.slug}`}><span>← PREVIOUS PROJECT</span><strong>{previous.name}</strong></Link><Link className="next-detail" href={`/work/${next.slug}`}><span>NEXT PROJECT →</span><strong>{next.name}</strong><small>{next.cat}</small></Link></nav>
     </main>
-    <footer className="detail-footer"><Link href="/#work">View all 12 projects ↗</Link><span>SAUMYA DOHAREY / IN THE MAKING</span></footer>
+    <footer className="detail-footer"><Link href="/work">View all {projects.length} projects ↗</Link><span>SAUMYA DOHAREY / IN THE MAKING</span></footer>
   </div>;
 }

@@ -15,7 +15,7 @@ export default function PortfolioMotion({ children }: { children: ReactNode }) {
       const small = window.matchMedia('(max-width: 700px)').matches;
       // Animate content inside sections so anchor positions and document flow stay stable.
       const sections = gsap.utils.toArray<HTMLElement>(
-        '.archive-masthead, .archive-credits, .quick-facts, .brand-strip, .profile-grid, .work, .home-main > footer, .detail-hero, .detail-story > section, .detail-pagination, .detail-footer'
+        '.archive-masthead, .archive-credits, .quick-facts, .brand-strip, .profile-grid, .work, .home-main > footer, .detail-hero, .detail-story > section, .detail-pagination, .detail-footer, .work-page-section'
       );
       sections.forEach(section => {
         const targets = section.matches('.work')
