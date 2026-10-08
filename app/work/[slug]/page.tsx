@@ -27,7 +27,7 @@ export default async function ProjectPage({params}: Props) {
         <h1>{project.name}</h1><p className="detail-line">{project.line}</p>
         <dl className="detail-facts"><div><dt>MY ROLE</dt><dd>{project.roles}</dd></div><div><dt>FORMAT</dt><dd>{project.format}</dd></div><div><dt>PROJECT FOCUS</dt><dd>{story.focus}</dd></div></dl>
       </section>
-      <div className={`detail-cover cover ${project.color}`} aria-hidden="true"><span className="cover-meta">SAUMYA DOHAREY / {project.format}</span><ProjectArtwork project={project}/><span className="cover-bottom">{project.name}<span>{String(index+1).padStart(2,'0')} / 12</span></span></div>
+      <div className={`detail-cover cover ${project.color}`} aria-hidden="true"><span className="cover-meta">SAUMYA DOHAREY / {project.format}</span><ProjectArtwork project={project}/><span className="cover-bottom">{project.name}<span>{String(index+1).padStart(2,'0')} / {String(projects.length).padStart(2,'0')}</span></span></div>
       <div className="detail-body"><aside className="detail-index"><span className="eyebrow">EXPERIENCE FILE / {String(index+1).padStart(2,'0')}</span><nav aria-label="Case study sections"><a href="#brief">01 / The brief</a><a href="#contribution">02 / My contribution</a><a href="#experience">03 / My experience</a><a href="#takeaway">04 / What I take forward</a></nav><div className="scope-card"><span className="eyebrow">AT A GLANCE</span><p>{project.type}</p><p>{project.format}</p><Link href="/#tools">My working kit ↗</Link></div></aside>
       <article className="detail-story">
         <section id="brief"><span className="eyebrow">01 / THE STARTING POINT</span><h2>The brief</h2><p>{project.brief}</p></section>
