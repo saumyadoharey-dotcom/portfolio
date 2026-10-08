@@ -20,6 +20,8 @@ export const portfolioBrands = [
   { name: 'Vaara Jewellery' },
   { name: 'Asan Cup', image: 'asan.svg' },
   { name: 'DIL Foods', image: 'dil.webp' },
+  { name: 'House of Andhra', image: 'house-of-andhra.svg' },
+  { name: 'PHURR', image: 'phurr.svg' },
 ];
 
 type Brand = { name: string; image?: string; note?: string };
