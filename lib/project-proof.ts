@@ -1,4 +1,4 @@
-export type ProofItemType = 'youtube' | 'drive-pdf' | 'drive-video' | 'image' | 'link';
+export type ProofItemType = 'youtube' | 'youtube-video' | 'drive-pdf' | 'drive-video' | 'image' | 'link';
 
 export type ProofItem = {
   type: ProofItemType;
