@@ -37,7 +37,7 @@ export default async function ProjectPage({params}: Props) {
         <section id="experience"><span className="eyebrow">04 / BEHIND THE WORK</span><h2>My experience</h2>{story.experience.map((paragraph,i)=><p key={i}>{paragraph}</p>)}</section>
         <section id="takeaway" className="detail-takeaway"><span className="eyebrow">05 / WHAT I TAKE FORWARD</span><h2>{story.takeaway}</h2></section>
       </article></div>
-      <nav className="detail-pagination" aria-label="Browse projects"><Link className="previous-detail" href={`/work/${previous.slug}`}><span>← PREVIOUS PROJECT</span><strong>{previous.name}</strong></Link><Link className="next-detail" href={`/work/${next.slug}`}><span>NEXT PROJECT →</span><strong>{next.name}</strong><small>{next.cat}</small></Link></nav>
+      <nav className="detail-pagination" aria-label="Browse projects"><Link className="previous-detail" href={`/work/${previous.slug}`}><span>← PREVIOUS PROJECT</span><strong>{previous.name}</strong><small>{previous.cat}</small></Link><Link className="next-detail" href={`/work/${next.slug}`}><span>NEXT PROJECT →</span><strong>{next.name}</strong><small>{next.cat}</small></Link></nav>
     </main>
     <footer className="detail-footer"><Link href="/work">View all {projects.length} projects ↗</Link><span>SAUMYA DOHAREY / IN THE MAKING</span></footer>
   </div>;
