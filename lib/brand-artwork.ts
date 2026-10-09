@@ -8,4 +8,7 @@ export const projectArtwork: Record<string,{file:string;dark?:boolean}> = {
   'cotopay':{file:'cotopay.webp'},
   'framer-hosting':{file:'framer.svg'},
   'krismar-marbles':{file:'krismar.svg'},
+  'house-of-andhra':{file:'house-of-andhra.svg'},
+  'asan-cup':{file:'asan.svg'},
+  'phurr':{file:'phurr.svg',dark:true},
 };
