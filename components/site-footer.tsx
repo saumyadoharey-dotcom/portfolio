@@ -5,18 +5,18 @@ import { CalendarDays, Mail, Linkedin, Instagram, ArrowUpRight } from "lucide-re
 
 const footerConfig = {
   email: {
-    href: "mailto:you@example.com",
+    href: "mailto:saumyadoharey014@gmail.com",
     label: "EMAIL",
     preview: "Inbox · 3 unread",
   },
   calendar: {
-    href: "https://calendar.google.com/",
+    href: "https://calendar.google.com/calendar/u/1/r",
     label: "CALENDAR",
     preview: "Today · 2 events",
   },
   socials: {
-    linkedin: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
+    linkedin: "https://www.linkedin.com/in/saumya-doharey-0b3109312",
+    instagram: "https://www.instagram.com/saumya.04/",
   },
 };
 
