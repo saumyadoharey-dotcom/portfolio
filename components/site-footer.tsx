@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CalendarDays, Mail, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, CalendarDays, Mail } from "lucide-react";
 
 const footerConfig = {
   email: "mailto:saumyadoharey014@gmail.com",
@@ -13,52 +13,46 @@ const footerConfig = {
 export default function SiteFooter() {
   return (
     <footer className="site-footer" aria-label="Contact and social links">
-      <div className="site-footer-cta">
-        <p className="site-footer-eyebrow">A NOTE BEFORE YOU GO</p>
-        <div className="site-footer-cta-row">
-          <h2>Have something in mind? <span>Let’s connect.</span></h2>
-          <div className="site-footer-actions">
-            <motion.a
-              className="site-footer-action"
-              href={footerConfig.email}
-              whileHover={{ y: -2 }}
-              whileFocus={{ y: -2 }}
-            >
-              <Mail size={15} strokeWidth={1.7} aria-hidden="true" />
-              EMAIL ME
-              <ArrowUpRight size={13} aria-hidden="true" />
-            </motion.a>
-            <motion.a
-              className="site-footer-action"
-              href={footerConfig.calendar}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ y: -2 }}
-              whileFocus={{ y: -2 }}
-            >
-              <CalendarDays size={15} strokeWidth={1.7} aria-hidden="true" />
-              BOOK A TIME
-              <ArrowUpRight size={13} aria-hidden="true" />
-            </motion.a>
+      <div className="site-footer-hero">
+        <h2 className="site-footer-headline">
+          Let’s design
+          <span>meaningful work together.</span>
+        </h2>
+
+        <div className="site-footer-contact-grid">
+          <div className="site-footer-contact-item">
+            <span className="site-footer-label">Email</span>
+            <a className="site-footer-contact-link" href={footerConfig.email}>
+              saumya.doharey014@gmail.com
+              <ArrowUpRight size={14} aria-hidden="true" />
+            </a>
+          </div>
+
+          <div className="site-footer-contact-item">
+            <span className="site-footer-label">Call Me / Calendar</span>
+            <a className="site-footer-contact-link" href={footerConfig.calendar} target="_blank" rel="noopener noreferrer">
+              Book a time
+              <CalendarDays size={14} aria-hidden="true" />
+            </a>
+          </div>
+
+          <div className="site-footer-contact-item">
+            <span className="site-footer-label">Social</span>
+            <div className="site-footer-social-pills">
+              <a href={footerConfig.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in <ArrowUpRight size={11} aria-hidden="true" /></a>
+              <a href={footerConfig.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎ <ArrowUpRight size={11} aria-hidden="true" /></a>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="site-footer-bottom">
-        <nav className="site-footer-socials" aria-label="Social media">
-          <a href={footerConfig.linkedin} target="_blank" rel="noopener noreferrer">
-            <span className="site-footer-social-glyph" aria-hidden="true">in</span>
-            LINKEDIN
-          </a>
-          <a href={footerConfig.instagram} target="_blank" rel="noopener noreferrer">
-            <span className="site-footer-social-glyph site-footer-instagram-glyph" aria-hidden="true">◎</span>
-            INSTAGRAM
-          </a>
+        <nav className="site-footer-socials" aria-label="Social links">
+          <a href={footerConfig.linkedin} target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+          <a href={footerConfig.instagram} target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
         </nav>
         <span className="site-footer-credit">© {new Date().getFullYear()} SAUMYA DOHAREY</span>
-        <a className="site-footer-backtop" href="#top" onClick={(event) => { event.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
-          BACK TO TOP ↑
-        </a>
+        <a className="site-footer-backtop" href="#top" onClick={(event) => { event.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>BACK TO TOP ↑</a>
       </div>
     </footer>
   );
