@@ -16,26 +16,25 @@ h1,h2,h3{font-weight:400}.archive-hero{position:relative;min-height:calc(100svh 
 @media(max-width:650px){.work-filter-bar{align-items:flex-start;flex-direction:column;gap:18px}.work-filters{gap:7px}.work-filter-item button{font-size:12px}.work-filter-slash{font-size:15px}.work-filter-bar .views{align-self:flex-end}.view-label{font-size:9px}}
 
 
-/* Quiet editorial footer inspired by the reference portfolio */
-.site-footer{position:relative;margin:84px 0 0;padding:38px 0 20px;border-top:1px solid #bdbdb8;color:#141414;background:transparent;font-family:Arial,Helvetica,sans-serif}
-.site-footer-cta{padding:0 0 48px}
-.site-footer-eyebrow{margin:0 0 20px;color:#777;font:10px 'Courier New',monospace;letter-spacing:.13em}
-.site-footer-cta-row{display:flex;align-items:flex-end;justify-content:space-between;gap:28px}
-.site-footer-cta-row h2{max-width:720px;margin:0;font:400 clamp(32px,5.2vw,66px)/1.02 Georgia,serif;letter-spacing:-.055em}
-.site-footer-cta-row h2 span{color:#777}
-.site-footer-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.site-footer-action{display:inline-flex;align-items:center;gap:9px;min-height:42px;padding:0 14px;border:1px solid #bdbdb8;border-radius:999px;color:inherit;text-decoration:none;font:10px 'Courier New',monospace;letter-spacing:.04em;transition:background .2s,color .2s,border-color .2s}
-.site-footer-action:hover{background:#141414;color:#f4f4f2;border-color:#141414}
-.site-footer-action svg:last-child{margin-left:2px;opacity:.65}
-.site-footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:22px;padding-top:18px;border-top:1px solid #d0d0cb;font:10px 'Courier New',monospace;letter-spacing:.07em}
-.site-footer-socials{display:flex;align-items:center;gap:24px}
-.site-footer-socials a{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none;transition:opacity .2s}
-.site-footer-socials a:hover{opacity:.55}
-.site-footer-social-glyph{display:inline-grid;place-items:center;width:16px;height:16px;border:1px solid currentColor;border-radius:50%;font:700 9px Arial,sans-serif;letter-spacing:-.04em;text-transform:none}
-.site-footer-instagram-glyph{font:14px/1 Arial,sans-serif}
-.site-footer-credit{color:#777;text-align:center}
-.site-footer-backtop{color:inherit;text-decoration:none;white-space:nowrap}
-.site-footer-backtop:hover{text-decoration:underline;text-underline-offset:4px}
-@media(max-width:760px){.site-footer{margin-top:60px;padding-top:28px}.site-footer-cta{padding-bottom:30px}.site-footer-cta-row{align-items:flex-start;flex-direction:column;gap:22px}.site-footer-cta-row h2{font-size:clamp(34px,8vw,52px)}.site-footer-actions{flex-wrap:wrap}.site-footer-bottom{flex-wrap:wrap;gap:15px}.site-footer-credit{order:3;width:100%;text-align:left}.site-footer-backtop{margin-left:auto}}
-@media(max-width:420px){.site-footer-socials{gap:15px}.site-footer-socials a{font-size:9px;gap:5px}.site-footer-actions{gap:8px}.site-footer-action{padding:0 11px;font-size:9px}}
-@media(prefers-reduced-motion:reduce){.site-footer-action,.site-footer-socials a{transition:none}}
+/* Symmetrical editorial footer with F/Z scanning hierarchy */
+.site-footer{position:relative;margin:84px 0 0;padding:36px 0 20px;border-top:1px solid #bdbdb8;color:#f5f5f2;background:#050505;font-family:Arial,Helvetica,sans-serif}
+.site-footer-hero{padding:0 0 30px}
+.site-footer-headline{display:flex;flex-direction:column;align-items:flex-start;margin:0 0 36px;font:500 clamp(38px,6.5vw,76px)/.93 Arial,Helvetica,sans-serif;letter-spacing:-.065em}
+.site-footer-headline span{color:#818181}
+.site-footer-contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.site-footer-contact-item{display:flex;min-width:0;flex-direction:column;align-items:flex-start;gap:9px}
+.site-footer-label{color:#888;font-size:11px;font-weight:600}
+.site-footer-contact-link{display:inline-flex;align-items:center;gap:8px;max-width:100%;color:inherit;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:-.025em;overflow-wrap:anywhere}
+.site-footer-contact-link svg{flex-shrink:0;opacity:.75}
+.site-footer-contact-link:hover,.site-footer-socials a:hover,.site-footer-backtop:hover{opacity:.65}
+.site-footer-social-pills{display:flex;align-items:center;gap:8px}
+.site-footer-social-pills a{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-width:34px;height:30px;padding:0 10px;border:1px solid #555;border-radius:999px;color:inherit;text-decoration:none;font-size:12px;font-weight:700;transition:background .2s,color .2s,border-color .2s}
+.site-footer-social-pills a:hover{background:#f5f5f2;color:#080808;border-color:#f5f5f2}
+.site-footer-bottom{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:18px;padding-top:18px;border-top:1px solid #444;font:10px 'Courier New',monospace;letter-spacing:.06em}
+.site-footer-socials{display:flex;align-items:center;gap:18px}
+.site-footer-socials a,.site-footer-backtop{color:inherit;text-decoration:none;white-space:nowrap;transition:opacity .2s}
+.site-footer-credit{color:#999;text-align:center}
+.site-footer-backtop{justify-self:end}
+@media(max-width:760px){.site-footer{margin-top:60px;padding-top:28px}.site-footer-headline{font-size:clamp(36px,8vw,56px);margin-bottom:30px}.site-footer-contact-grid{gap:24px}.site-footer-contact-link{font-size:12px}.site-footer-bottom{grid-template-columns:1fr auto}.site-footer-credit{grid-column:1/-1;grid-row:2;text-align:left}.site-footer-backtop{grid-column:2;grid-row:1}}
+@media(max-width:520px){.site-footer-contact-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.site-footer-contact-item:last-child{grid-column:1/-1}.site-footer-headline{font-size:clamp(34px,9vw,48px)}.site-footer-contact-link{font-size:12px}.site-footer-socials{gap:12px}.site-footer-bottom{font-size:9px;gap:12px}}
+@media(prefers-reduced-motion:reduce){.site-footer-social-pills a{transition:none}}
