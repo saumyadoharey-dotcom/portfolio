@@ -10,7 +10,7 @@ const footerConfig = {
     preview: "Inbox · 3 unread",
   },
   calendar: {
-    href: "https://calendar.google.com/calendar/u/1/r",
+    href: "https://calendar.google.com/calendar/u/1?cid=c2F1bXlhZG9oYXJleTAxNEBnbWFpbC5jb20",
     label: "CALENDAR",
     preview: "Today · 2 events",
   },
