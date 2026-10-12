@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CalendarDays, Mail, ArrowUpRight, Linkedin, Instagram } from "lucide-react";
+import { CalendarDays, Mail, ArrowUpRight } from "lucide-react";
 
 const footerConfig = {
   email: {
@@ -79,11 +79,11 @@ export default function SiteFooter() {
       <div className="site-footer-bottom">
         <nav className="site-footer-socials" aria-label="Social media">
           <a href={footerConfig.socials.linkedin} target="_blank" rel="noopener noreferrer">
-            <Linkedin size={13} strokeWidth={1.8} aria-hidden="true" />
+            <span className="site-footer-social-glyph" aria-hidden="true">in</span>
             LINKEDIN
           </a>
           <a href={footerConfig.socials.instagram} target="_blank" rel="noopener noreferrer">
-            <Instagram size={13} strokeWidth={1.8} aria-hidden="true" />
+            <span className="site-footer-social-glyph site-footer-instagram-glyph" aria-hidden="true">◎</span>
             INSTAGRAM
           </a>
         </nav>
