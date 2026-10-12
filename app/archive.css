@@ -38,3 +38,14 @@ h1,h2,h3{font-weight:400}.archive-hero{position:relative;min-height:calc(100svh 
 @media(max-width:760px){.site-footer{margin-top:60px;padding-top:28px}.site-footer-headline{font-size:clamp(36px,8vw,56px);margin-bottom:30px}.site-footer-contact-grid{gap:24px}.site-footer-contact-link{font-size:12px}.site-footer-bottom{grid-template-columns:1fr auto}.site-footer-credit{grid-column:1/-1;grid-row:2;text-align:left}.site-footer-backtop{grid-column:2;grid-row:1}}
 @media(max-width:520px){.site-footer-contact-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.site-footer-contact-item:last-child{grid-column:1/-1}.site-footer-headline{font-size:clamp(34px,9vw,48px)}.site-footer-contact-link{font-size:12px}.site-footer-socials{gap:12px}.site-footer-bottom{font-size:9px;gap:12px}}
 @media(prefers-reduced-motion:reduce){.site-footer-social-pills a{transition:none}}
+
+
+/* Footer spacing and page-matched monochrome palette */
+.site-footer{margin-top:120px;color:#141414;background:transparent;border-top-color:#bdbdb8}
+.site-footer-headline span{color:#777}
+.site-footer-label{color:#666}
+.site-footer-social-pills a{border-color:#aaa;color:#141414}
+.site-footer-social-pills a:hover{background:#141414;color:#f4f4f2;border-color:#141414}
+.site-footer-bottom{border-top-color:#bbb}
+.site-footer-credit{color:#666}
+@media(max-width:760px){.site-footer{margin-top:88px}}
