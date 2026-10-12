@@ -79,11 +79,11 @@ export default function SiteFooter() {
       <div className="site-footer-bottom">
         <nav className="site-footer-socials" aria-label="Social media">
           <a href={footerConfig.socials.linkedin} target="_blank" rel="noopener noreferrer">
-            <span className="site-footer-social-glyph" aria-hidden="true">in</span>
+            <span className="site-footer-social-glyph" aria-label="LinkedIn">in</span>
             LINKEDIN
           </a>
           <a href={footerConfig.socials.instagram} target="_blank" rel="noopener noreferrer">
-            <span className="site-footer-social-glyph site-footer-instagram-glyph" aria-hidden="true">◎</span>
+            <span className="site-footer-social-glyph site-footer-instagram-glyph" aria-label="Instagram">◎</span>
             INSTAGRAM
           </a>
         </nav>
