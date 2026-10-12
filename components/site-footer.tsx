@@ -7,12 +7,12 @@ const footerConfig = {
   email: {
     href: "mailto:saumyadoharey014@gmail.com",
     label: "EMAIL",
-    preview: "Inbox · 3 unread",
+    preview: "saumyadoharey014@gmail.com",
   },
   calendar: {
     href: "https://calendar.google.com/calendar/u/1?cid=c2F1bXlhZG9oYXJleTAxNEBnbWFpbC5jb20",
     label: "CALENDAR",
-    preview: "Today · 2 events",
+    preview: "Find a time to connect",
   },
   socials: {
     linkedin: "https://www.linkedin.com/in/saumya-doharey-0b3109312",
@@ -30,7 +30,7 @@ export default function SiteFooter() {
     <footer className="site-footer" aria-label="Contact and quick links">
       <div className="site-footer-top">
         <a className="site-footer-mark" href="#" aria-label="Back to top">
-          sk
+          s✳
         </a>
 
         <div className="site-footer-quicklinks">
@@ -54,7 +54,7 @@ export default function SiteFooter() {
             className="site-footer-quicklink"
             href={footerConfig.calendar.href}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             variants={quickLinkMotion}
             initial="rest"
             whileHover="hover"
@@ -78,10 +78,12 @@ export default function SiteFooter() {
 
       <div className="site-footer-bottom">
         <nav className="site-footer-socials" aria-label="Social media">
-          <a href={footerConfig.socials.linkedin} target="_blank" rel="noreferrer">
+          <a href={footerConfig.socials.linkedin} target="_blank" rel="noopener noreferrer">
+            <span className="site-footer-social-glyph" aria-label="LinkedIn">in</span>
             LINKEDIN
           </a>
-          <a href={footerConfig.socials.instagram} target="_blank" rel="noreferrer">
+          <a href={footerConfig.socials.instagram} target="_blank" rel="noopener noreferrer">
+            <span className="site-footer-social-glyph site-footer-instagram-glyph" aria-label="Instagram">◎</span>
             INSTAGRAM
           </a>
         </nav>
