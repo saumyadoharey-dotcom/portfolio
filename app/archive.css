@@ -69,3 +69,7 @@ h1,h2,h3{font-weight:400}.archive-hero{position:relative;min-height:calc(100svh 
 .archive-art:has(.video-thumbnail),.cover:has(.video-thumbnail){color:#fff}
 .archive-art:has(.video-thumbnail):after,.cover:has(.video-thumbnail):after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,#0006,transparent 28%,transparent 68%,#0007)}
 .archive-art:has(.video-thumbnail)>.archive-edition,.archive-art:has(.video-thumbnail)>.archive-art-bottom,.cover:has(.video-thumbnail)>.cover-meta,.cover:has(.video-thumbnail)>.cover-bottom{z-index:2;text-shadow:0 1px 4px #000b}
+
+/* Case studies use one focused reading column. */
+.detail-body{display:block}
+.detail-story{max-width:900px;margin:0 auto}
