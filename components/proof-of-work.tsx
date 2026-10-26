@@ -1,3 +1,5 @@
+"use client";
+
 import { projectProof } from '@/lib/project-proof';
 
 type Props = { slug: string };
@@ -47,7 +49,6 @@ export default function ProofOfWork({ slug }: Props) {
               <div className="proof-media">
                 {item.type === 'image' ? (
                   <a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`Open ${item.title} image`}>
-                    {/* Local, portfolio-owned proof images live under public/proof/. */}
                     <img src={item.url} alt={item.title} loading="lazy" />
                   </a>
                 ) : yt ? (

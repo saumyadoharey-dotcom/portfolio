@@ -48,13 +48,13 @@ export const projectProof: Record<string, ProjectProof> = {
       url: 'https://drive.google.com/file/d/1LvpZxV5d-wS1_9Dnr40L0gjCofvbp4Zg/view?usp=drive_link'
     },] },
   'green-packaging': { intro: 'The episode and selected research or script material.', items: [{
-      type: 'youtube-video',
+      type: 'youtube',
       title: 'Final film',
       description: 'Directed, shot and edited by me.',
       url: 'https://youtu.be/_qdZbwa6ktA?si=5bUc0_FOaRYrbkDV'
     },] },
   'popcorn-pricing': { intro: 'The episode and selected research or script material.', items: [{
-      type: 'youtube-video',
+      type: 'youtube',
       title: 'Final film',
       description: 'Directed, shot and edited by me.',
       url: 'https://youtu.be/e5GudnURYBo?si=Cbf2nIVTuBsGx-BB'
