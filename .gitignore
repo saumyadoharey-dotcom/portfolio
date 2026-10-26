@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+.vinext/
+out/
+dist/
+
+# Cloudflare local files
+.wrangler/
+.dev.vars*
+
+# Local secrets
+.env*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# Operating system
+.DS_Store
