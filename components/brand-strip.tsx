@@ -9,8 +9,6 @@ export const portfolioBrands = [
   { name: 'Mill’d', image: 'milld.png' },
   { name: 'WokTok', image: 'woktok.svg' },
   { name: 'Eat Kried', image: 'kried.webp' },
-  { name: 'Green Packaging', note: 'Independent YouTube film' },
-  { name: 'The Price of Popcorn', note: 'Independent YouTube film' },
   { name: 'Sportsyard', image: 'sportsyard.svg' },
   { name: 'Epicure Robotics', image: 'epicure.png' },
   { name: 'CotoPay', image: 'cotopay.webp' },
@@ -21,7 +19,7 @@ export const portfolioBrands = [
   { name: 'Asan Cup', image: 'asan.svg' },
   { name: 'DIL Foods', image: 'dil.webp' },
   { name: 'House of Andhra', image: 'house-of-andhra.svg' },
-  { name: 'PHURR', image: 'phurr.svg' },
+  { name: 'PHURR', image: 'Screenshot 2026-10-23 163800.png' },
 ];
 
 type Brand = { name: string; image?: string; note?: string };
