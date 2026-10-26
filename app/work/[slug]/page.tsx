@@ -19,7 +19,9 @@ export default async function ProjectPage({params}: Props) {
   const index=projects.findIndex(p=>p.slug===slug);
   if(index<0) notFound();
   const project=projects[index];const story=stories[slug];
-  const next=projects[(index+1)%projects.length];const previous=projects[(index+projects.length-1)%projects.length];<SiteNav active="project" projectCount={projects.length} />ote">A STORY FROM THE ARCHIVE</span></header>
+  const next=projects[(index+1)%projects.length];const previous=projects[(index+projects.length-1)%projects.length];
+  return <div className="project-page">
+    <SiteNav active="project" projectCount={projects.length} />
     <main id="project-main">
       <section className="detail-hero">
         <div className="detail-kicker"><Link href="/work">← Selected work</Link><span>{String(index+1).padStart(2,'0')} / {String(projects.length).padStart(2,'0')}</span></div>
