@@ -41,14 +41,14 @@ h1,h2,h3{font-weight:400}.archive-hero{position:relative;min-height:calc(100svh 
 
 
 /* Footer spacing and page-matched monochrome palette */
-.site-footer{margin-top:120px;color:#141414;background:transparent;border-top-color:#bdbdb8}
+.site-footer{margin-top:200px;color:#141414;background:transparent;border-top-color:#bdbdb8}
 .site-footer-headline span{color:#777}
 .site-footer-label{color:#666}
 .site-footer-social-pills a{border-color:#aaa;color:#141414}
 .site-footer-social-pills a:hover{background:#141414;color:#f4f4f2;border-color:#141414}
 .site-footer-bottom{border-top-color:#bbb}
 .site-footer-credit{color:#666}
-@media(max-width:760px){.site-footer{margin-top:88px}}
+@media(max-width:760px){.site-footer{margin-top:150px}}
 
 /* Category filters for the featured homepage index. */
 .archive-filters{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;margin:0 0 12px}
