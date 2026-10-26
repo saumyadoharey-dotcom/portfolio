@@ -3,7 +3,8 @@
 import type { MouseEvent } from "react";
 
 type SiteNavProps = {
-  active?: "home" | "work";
+  active?: "home" | "work" | "project";
+  note?: string;
   projectCount: number;
 };
 
@@ -26,11 +27,15 @@ function followDestination(path: string, event: MouseEvent<HTMLAnchorElement>) {
 export default function SiteNav({
   active = "home",
   projectCount,
+  note: customNote,
 }: SiteNavProps) {
   const note =
-    active === "work"
+    customNote ??
+    (active === "work"
       ? `ALL WORK / ${projectCount} PROJECTS`
-      : "FILM / STRATEGY / DESIGN";
+      : active === "project"
+        ? "A STORY FROM THE ARCHIVE"
+        : "FILM / STRATEGY / DESIGN");
 
   return (
     <header className="nav">
