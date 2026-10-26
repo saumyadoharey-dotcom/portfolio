@@ -73,3 +73,9 @@ h1,h2,h3{font-weight:400}.archive-hero{position:relative;min-height:calc(100svh 
 /* Case studies use one focused reading column. */
 .detail-body{display:block}
 .detail-story{max-width:900px;margin:0 auto}
+
+/* Keep the in-page full-story action aligned with the original footer layout. */
+.popup-bottom{align-items:center;flex-direction:row;justify-content:space-between;gap:16px}
+.popup-expand-link{border:0;background:transparent;box-shadow:none;padding:10px 0;color:#141414;font:13px/1.6 Arial,Helvetica,sans-serif;text-align:right;text-decoration:none}
+.popup-expand-link:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:600px){.popup-bottom{align-items:center;flex-direction:row;justify-content:space-between;gap:12px}.popup-expand-link{font-size:11px}}
