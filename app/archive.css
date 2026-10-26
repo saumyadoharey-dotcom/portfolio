@@ -80,11 +80,11 @@ h1,h2,h3{font-weight:400}.archive-hero{position:relative;min-height:calc(100svh 
 .popup-expand-link:hover{text-decoration:underline;text-underline-offset:4px}
 @media(max-width:600px){.popup-bottom{align-items:center;flex-direction:row;justify-content:space-between;gap:12px}.popup-expand-link{font-size:11px}}
 /* About introduction followed by the full width tools list. */
-.profile-section{border-top:1px solid #141414;padding-top:40px;margin:0 0 100px}
-.profile-section>.about-panel{max-width:none;padding:0;background:transparent}
+.profile-section{display:flex;flex-direction:column;align-items:stretch;border-top:1px solid #141414;padding-top:40px;margin:0 0 100px}
+.profile-section>.about-panel{width:100%;max-width:none;padding:0;background:transparent}
 .profile-section>.about-panel>p:not(.eyebrow){max-width:760px;color:#444}
 .profile-section .style-note{max-width:760px}
-.profile-section>.toolkit{margin-top:112px;padding:35px 0 0;border-top:1px solid #bbb;background:transparent}
+.profile-section>.toolkit{width:100%;margin-top:112px;padding:35px 0 0;border-top:1px solid #bbb;background:transparent}
 .toolkit h2{margin:18px 0 34px}
 .toolkit ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 24px;margin:0;padding:0;list-style:none}
 .toolkit li,.toolkit li:last-child{display:block;border-top:1px solid #bbb;padding:18px 0 20px}
