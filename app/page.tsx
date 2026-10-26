@@ -9,7 +9,7 @@ import SiteFooter from '@/components/site-footer';
 
 export default function Home(){const [progress,setProgress]=useState(0);
 useEffect(()=>{const update=()=>setProgress(window.scrollY/Math.max(1,document.documentElement.scrollHeight-window.innerHeight));window.addEventListener('scroll',update,{passive:true});const hash=()=>{const slug=window.location.hash.replace('#project/','');if(projects.some(p=>p.slug===slug))window.location.replace('/work/'+slug);};hash();window.addEventListener('hashchange',hash);return()=>{window.removeEventListener('scroll',update);window.removeEventListener('hashchange',hash)}},[]);
-return <><div className="reading-progress<SiteNav projectCount={projects.length} />ote">FILM / STRATEGY / DESIGN</span></header>
+return <><div className="reading-progress" style={{transform:`scaleX(${progress})`}}/><SiteNav projectCount={projects.length} />
 <main className="home-main"><ArchiveHero/>
 <section className="quick-facts panel" aria-label="Quick details"><div><span>BASED IN</span><strong>Bengaluru, India</strong></div><div><span>MY PRACTICE</span><strong>Film, strategy & design</strong></div><div><span>THE NEXT CHAPTER</span><strong>Writing & directing films</strong></div></section>
 <BrandStrip/>

@@ -28,9 +28,9 @@ export default function WorkPage() {
   const [view, setView] = useState('grid');
   const visible = projectsForFilter(filter);
 
-  retur<SiteNav active="work" projectCount={projects.length} />gth} PROJECTS
-        </span>
-      </header>
+  return (
+    <div className="project-page">
+      <SiteNav active="work" projectCount={projects.length} />
 
       <main id="work-main">
         <section className="work work-page-section">
