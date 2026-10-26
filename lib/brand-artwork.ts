@@ -10,5 +10,5 @@ export const projectArtwork: Record<string,{file:string;dark?:boolean}> = {
   'krismar-marbles':{file:'krismar.svg'},
   'house-of-andhra':{file:'house-of-andhra.svg'},
   'asan-cup':{file:'asan.svg'},
-  'phurr':{file:'phurr.svg',dark:true},
+  'phurr':{file:'Screenshot 2026-10-23 163800.png',dark:true},
 };
