@@ -8,21 +8,22 @@ import { featuredProjects, projects } from '@/lib/projects';
 import Link from 'next/link';
 
 const filters = [
-  { id: 'Best work', label: 'Best work' },
+  { id: 'All work', label: 'All work' },
   { id: 'Creative strategy', label: 'Creative strategy' },
   { id: 'Design', label: 'Design' },
   { id: 'Film production', label: 'Film production' },
+  { id: 'Best work', label: 'Best work' },
 ];
 
 function projectsForFilter(filter: string) {
-  return filter === 'Best work'
-    ? featuredProjects
-    : projects.filter((project) => project.cat === filter);
+  if (filter === 'All work') return projects;
+  if (filter === 'Best work') return featuredProjects;
+  return projects.filter((project) => project.cat === filter);
 }
 
 export default function WorkPage() {
   const reducedMotion = useReducedMotion();
-  const [filter, setFilter] = useState('Best work');
+  const [filter, setFilter] = useState('All work');
   const [view, setView] = useState('grid');
   const visible = projectsForFilter(filter);
 
@@ -40,7 +41,7 @@ export default function WorkPage() {
           <Link href="/#tools">Tools</Link>
         </nav>
         <span className="nav-note">
-          BEST WORK / {featuredProjects.length} FEATURED
+          ALL WORK / {projects.length} PROJECTS
         </span>
       </header>
 
@@ -58,10 +59,12 @@ export default function WorkPage() {
             <nav className="work-filters" aria-label="Filter projects">
               {filters.map((option, index) => {
                 const count =
-                  option.id === 'Best work'
-                    ? featuredProjects.length
-                    : projects.filter((project) => project.cat === option.id)
-                        .length;
+                  option.id === 'All work'
+                    ? projects.length
+                    : option.id === 'Best work'
+                      ? featuredProjects.length
+                      : projects.filter((project) => project.cat === option.id)
+                          .length;
 
                 return (
                   <span className="work-filter-item" key={option.id}>
