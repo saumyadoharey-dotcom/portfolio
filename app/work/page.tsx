@@ -1,6 +1,7 @@
 "use client";
 
 import ProjectArtwork from '@/components/project-artwork';
+import SiteNav from '@/components/site-nav';
 import { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import ProjectPopup from '@/components/project-popup';
@@ -27,21 +28,7 @@ export default function WorkPage() {
   const [view, setView] = useState('grid');
   const visible = projectsForFilter(filter);
 
-  return (
-    <div className="project-page">
-      <header className="nav">
-        <Link href="/" className="wordmark" aria-label="Saumya home">
-          saumya<span>✳</span>
-        </Link>
-        <nav>
-          <Link href="/work" aria-current="page">
-            Index <sup>{projects.length}</sup>
-          </Link>
-          <Link href="/#about">About</Link>
-          <Link href="/#tools">Tools</Link>
-        </nav>
-        <span className="nav-note">
-          ALL WORK / {projects.length} PROJECTS
+  retur<SiteNav active="work" projectCount={projects.length} />gth} PROJECTS
         </span>
       </header>
 
