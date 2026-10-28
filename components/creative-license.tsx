@@ -2,7 +2,7 @@
 
 import { Dialog } from "radix-ui";
 
-const image = "/images/creative-license.png";
+const image = "/images/creative-license.svg";
 const description = "Saumya Doharey’s Creative License card";
 
 export default function CreativeLicense() {
@@ -11,7 +11,7 @@ export default function CreativeLicense() {
       <figure className="creative-license">
         <Dialog.Trigger asChild>
           <button type="button" className="creative-license-trigger" aria-label="Enlarge my Creative License">
-            <img src={image} alt={description} width={1264} height={848} loading="lazy" />
+            <img src={image} alt={description} width={1000} height={1000} loading="lazy" />
           </button>
         </Dialog.Trigger>
         <figcaption>My creative license. Click or tap to explore.</figcaption>
@@ -23,7 +23,7 @@ export default function CreativeLicense() {
             <Dialog.Title>My Creative License</Dialog.Title>
             <Dialog.Close className="creative-license-close">Close ×</Dialog.Close>
           </div>
-          <img src={image} alt={description} width={1264} height={848} />
+          <img src={image} alt={description} width={1000} height={1000} />
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
