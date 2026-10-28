@@ -95,3 +95,20 @@ h1,h2,h3{font-weight:400}.archive-hero{position:relative;min-height:calc(100svh 
 .tool-note{margin:30px 0 0;color:#555}
 @media(max-width:900px){.toolkit ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.profile-section{padding-top:28px;margin-bottom:60px}.profile-section>.toolkit{margin-top:76px;padding-top:28px}.toolkit ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}.toolkit h2{margin-bottom:26px}}
+
+/* Personal artwork with an accessible enlarged view. */
+.creative-license{margin:0 0 32px}
+.creative-license-trigger{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;transition:transform 250ms ease,box-shadow 250ms ease}
+.creative-license-trigger img{display:block;width:100%;height:auto}
+.creative-license figcaption{margin-top:12px;color:#666;font-size:12px;line-height:1.5}
+@media(hover:hover) and (pointer:fine){.creative-license-trigger:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 16px 32px #0002}}
+.creative-license-overlay{position:fixed;inset:0;z-index:100;background:#000c;animation:license-fade 180ms ease}
+.creative-license-lightbox{position:fixed;inset:0;z-index:101;margin:auto;width:min(1100px,calc(100% - 32px));height:fit-content;max-height:calc(100dvh - 32px);overflow:auto;background:#f4f4f2;color:#141414;padding:16px;box-shadow:0 24px 80px #0006;animation:license-open 200ms ease}
+.creative-license-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
+.creative-license-toolbar h2{margin:0;font:500 16px Arial,Helvetica,sans-serif}
+.creative-license-close{min-height:44px;padding:8px 12px;border:1px solid #aaa;background:transparent;color:inherit;font-size:14px}
+.creative-license-lightbox>img{display:block;width:100%;height:auto}
+.creative-license-trigger:focus-visible,.creative-license-close:focus-visible{outline:2px solid #7651a8;outline-offset:5px}
+@keyframes license-fade{from{opacity:0}to{opacity:1}}
+@keyframes license-open{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.creative-license-trigger{transition:none}.creative-license-trigger:hover{transform:none}.creative-license-overlay,.creative-license-lightbox{animation:none}}
