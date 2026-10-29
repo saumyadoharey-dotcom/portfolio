@@ -150,3 +150,30 @@ h1,h2,h3{font-weight:400}.archive-hero{position:relative;min-height:calc(100svh 
     margin: 0 auto;
   }
 }
+
+
+/* Keep the license frame stationary; scale only the bordered artwork inside it. */
+.creative-license-frame {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #bdbdb8;
+  background: #f4f4f2;
+}
+.creative-license-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 240ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .creative-license-frame:hover img {
+    transform: scale(1.035);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .creative-license-frame img {
+    transition: none;
+  }
+}
