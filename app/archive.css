@@ -152,12 +152,12 @@ h1,h2,h3{font-weight:400}.archive-hero{position:relative;min-height:calc(100svh 
 }
 
 
-/* Keep the license frame stationary; scale only the bordered artwork inside it. */
+/* Keep the license image frame stationary and remove its visible outline. */
 .creative-license-frame {
   width: 100%;
   overflow: hidden;
-  border: 1px solid #bdbdb8;
-  background: #f4f4f2;
+  border: 0;
+  background: transparent;
 }
 .creative-license-frame img {
   display: block;
