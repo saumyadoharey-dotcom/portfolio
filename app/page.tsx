@@ -1,4 +1,5 @@
 "use client";
+import ClassicTypewriterName from "@/components/classic-typewriter";
 import {useEffect,useState} from 'react';
 import { projects } from '@/lib/projects';
 import Toolkit from '@/components/toolkit';
