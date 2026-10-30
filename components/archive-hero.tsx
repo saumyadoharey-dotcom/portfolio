@@ -69,9 +69,19 @@ export default function ArchiveHero() {
       }}
     >
       <div className="archive-masthead">
-        <h1>Saumya Doharey</h1>
-        <p>Production, creative strategy &amp; design.</p>
-      </div>
+  <ClassicTypewriterName
+    text="Saumya Doharey"
+    typingSpeed={120}
+    deleteSpeed={70}
+    pauseDuration={1300}
+    loop={true}
+    color="#FFFFFF"
+    cursorColor="#FFFFFF"
+    fontSize={53}
+    alignment="left"
+  />
+  <p>Production, creative strategy &amp; design.</p>
+</div>
 
       <aside className="archive-credits" aria-live="polite">
         <h2>{project.name}</h2>
