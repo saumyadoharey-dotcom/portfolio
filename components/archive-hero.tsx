@@ -1,5 +1,6 @@
 'use client';
 
+import ClassicTypewriterName from '@/components/classic-typewriter';
 import ProjectArtwork from '@/components/project-artwork';
 import { useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
