@@ -33,7 +33,7 @@ export default function ClassicTypewriterName({
   useEffect(() => {
     if (!text) return;
 
-    let timer: ReturnType<typeof setTimeout>;
+    let timer: ReturnType<typeof setTimeout> | undefined;
 
     if (!isDeleting) {
       if (visibleCount < text.length) {
@@ -55,7 +55,9 @@ export default function ClassicTypewriterName({
       }
     }
 
-    return () => clearTimeout(timer);
+   return () => {
+  if (timer) clearTimeout(timer);
+};
   }, [
     text,
     visibleCount,
