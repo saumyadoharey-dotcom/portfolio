@@ -1,5 +1,5 @@
 "use client";
-import ClassicTypewriterName from "@/components/classic-typewriter";
+import TypewriterIntro from "@/components/typewriter-intro";
 import {useEffect,useState} from 'react';
 import { projects } from '@/lib/projects';
 import Toolkit from '@/components/toolkit';
@@ -13,6 +13,7 @@ export default function Home(){const [progress,setProgress]=useState(0);
 useEffect(()=>{const update=()=>setProgress(window.scrollY/Math.max(1,document.documentElement.scrollHeight-window.innerHeight));window.addEventListener('scroll',update,{passive:true});const hash=()=>{const slug=window.location.hash.replace('#project/','');if(projects.some(p=>p.slug===slug))window.location.replace('/work/'+slug);};hash();window.addEventListener('hashchange',hash);return()=>{window.removeEventListener('scroll',update);window.removeEventListener('hashchange',hash)}},[]);
 return (
   <>
+    <TypewriterIntro />
     <div className="reading-progress" style={{transform:`scaleX(${progress})`}} />
     <SiteNav projectCount={projects.length} />
 <main className="home-main"><ArchiveHero/>
