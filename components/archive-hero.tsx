@@ -1,6 +1,5 @@
 'use client';
 
-import ClassicTypewriterName from '@/components/classic-typewriter';
 import ProjectArtwork from '@/components/project-artwork';
 import { useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
@@ -69,19 +68,9 @@ export default function ArchiveHero() {
       }}
     >
       <div className="archive-masthead">
-  <ClassicTypewriterName
-    text="Saumya Doharey"
-    typingSpeed={120}
-    deleteSpeed={70}
-    pauseDuration={1300}
-    loop={true}
-    color="#FFFFFF"
-    cursorColor="#FFFFFF"
-    fontSize={53}
-    alignment="left"
-  />
-  <p>Production, creative strategy &amp; design.</p>
-</div>
+        <h1>Saumya Doharey</h1>
+        <p>Production, creative strategy &amp; design.</p>
+      </div>
 
       <aside className="archive-credits" aria-live="polite">
         <h2>{project.name}</h2>
