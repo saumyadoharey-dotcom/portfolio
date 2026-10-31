@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./archive.css";
 import PortfolioMotion from "@/components/portfolio-motion";
+import TypewriterIntro from "@/components/typewriter-intro";
 
 export const metadata: Metadata = {
   title: "Saumya — In the making",
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased"><PortfolioMotion>{children}</PortfolioMotion></body>
+      <body className="antialiased">
+        <TypewriterIntro />
+        <PortfolioMotion>{children}</PortfolioMotion>
+      </body>
     </html>
   );
 }
